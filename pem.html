@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Development Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            --secondary-gradient: linear-gradient(135deg, #5433ff 0%, #20bdff 50%, #a5fecb 100%);
+        }
+
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .website-header {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tech-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .tech-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: var(--secondary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tech-badge {
+            background: var(--secondary-gradient);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+
+        .performance-metrics {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+        }
+
+        .performance-bar {
+            background: var(--primary-gradient);
+            height: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .feature-highlight {
+            background-color: #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="website-header">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Website Development Project</h1>
+            <p class="lead">Crafting Modern, Responsive, and High-Performance Websites</p>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <!-- Teknologi Utama -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="tech-card">
+                    <div class="tech-icon">💻</div>
+                    <h3>Frontend Technologies</h3>
+                    <p>Cutting-edge web development frameworks</p>
+                    <div class="tech-badge">React</div>
+                    <div class="tech-badge">Vue.js</div>
+                    <div class="tech-badge">Angular</div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="tech-card">
+                    <div class="tech-icon">🔒</div>
+                    <h3>Security Features</h3>
+                    <p>Advanced protection and data privacy</p>
+                    <div class="tech-badge">SSL</div>
+                    <div class="tech-badge">HTTPS</div>
+                    <div class="tech-badge">OAuth</div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="tech-card">
+                    <div class="tech-icon">📱</div>
+                    <h3>Responsive Design</h3>
+                    <p>Seamless experience across all devices</p>
+                    <div class="tech-badge">Mobile-First</div>
+                    <div class="tech-badge">Adaptive</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Performance Metrics -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="performance-metrics">
+                    <h2>Performance Metrics</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>Page Load Speed</h4>
+                            <div class="performance-bar" style="width: 90%;"></div>
+                            <span>90% Fast</span>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Mobile Responsiveness</h4>
+                            <div class="performance-bar" style="width: 95%;"></div>
+                            <span>95% Responsive</span>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>SEO Optimization</h4>
+                            <div class="performance-bar" style="width: 85%;"></div>
+                            <span>85% Optimized</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature Highlights -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="feature-highlight">
+                    <h2>Key Features</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>🚀 High Performance</h4>
+                            <p>Optimized code and efficient rendering</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>🌐 Cross-Browser Compatible</h4>
+                            <p>Works perfectly on all major browsers</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>🔄 Continuous Updates</h4>
+                            <p>Regular maintenance and improvements</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="bg-success text-white text-center py-5 mt-5">
+        <div class="container">
+            <h2>Ready to Build Your Dream Website?</h2>
+            <p>Let's create something amazing together!</p>
+            <a href="#" class="btn btn-light btn-lg">Start Your Project</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Web Development Solutions. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Attached Storage (NAS) Solution</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            --secondary-gradient: linear-gradient(135deg, #5433ff 0%, #20bdff 50%)
+        }
+
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .nas-header {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .storage-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .storage-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .storage-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: var(--secondary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tech-badge {
+            background: var(--secondary-gradient);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+
+        .storage-metrics {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+        }
+
+        .storage-bar {
+            background: var(--primary-gradient);
+            height: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .network-features {
+            background-color: #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .raid-config {
+            background-color: #f1f3f5;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        .nas-package {
+            transition: transform 0.3s ease;
+        }
+
+        .nas-package:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header NAS -->
+    <header class="nas-header">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Network Attached Storage (NAS)</h1>
+            <p class="lead">Solusi Penyimpanan Aman, Scalable, dan Berkinerja Tinggi</p>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <!-- Fitur Penyimpanan -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="storage-card">
+                    <div class="storage-icon">💾</div>
+                    <h3>Penyimpanan Kapasitas Tinggi</h3>
+                    <p>Solusi penyimpanan enterprise-grade</p>
+                    <div class="tech-badge">16TB</div>
+                    <div class="tech-badge">32TB</div>
+                    <div class="tech-badge">64TB</div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="storage-card">
+                    <div class="storage-icon">🔒</div>
+                    <h3>Keamanan Data</h3>
+                    <p>Perlindungan dan enkripsi canggih</p>
+                    <div class="tech-badge">AES-256</div>
+                    <div class="tech-badge">SSL</div>
+                    <div class="tech-badge">2FA</div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="storage-card">
+                    <div class="storage-icon">🌐</div>
+                    <h3>Konektivitas Jaringan</h3>
+                    <p>Integrasi jaringan mulus</p>
+                    <div class="tech-badge">10Gbps</div>
+                    <div class="tech-badge">SMB</div>
+                    <div class="tech-badge">NFS</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Metrik Penyimpanan -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="storage-metrics">
+                    <h2>Metrik Kinerja Penyimpanan</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>Kecepatan Baca</h4>
+                            <div class="storage-bar" style="width: 95%;"></div>
+                            <span>950 MB/s</span>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Kecepatan Tulis</h4>
+                            <div class="storage-bar" style="width: 90%;"></div>
+                            <span>900 MB/s</span>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>IOPS</h4>
+                            <div class="storage-bar" style="width: 85%;"></div>
+                            <span>85,000 IOPS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fitur Jaringan -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="network-features">
+                    <h2>Fitur Jaringan</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>🔗 Dukungan Multi-Protokol</h4>
+                            <p>SMB, NFS, AFP, iSCSI</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>☁️ Integrasi Cloud</h4>
+                            <p>Dropbox, Google Drive, OneDrive</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>🌐 Akses Jarak Jauh</h4>
+                            <p>VPN Aman dan Aplikasi Mobile</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Konfigurasi RAID -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="raid-config">
+                    <h2>Opsi Konfigurasi RAID</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h4>RAID 0</h4>
+                            <p>Striping (Performa)</p>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>RAID 1</h4>
+                            <p>Mirroring (Redundansi)</p>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>RAID 5</h4>
+                            <p>Paritas Terdistribusi</p>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>RAID 10</h4>
+                            <p>Kombinasi Mirroring & Striping</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Paket Harga NAS -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2 class="text-center mb-4">Pilih Paket NAS Anda</h2>
+            </div>
+            <div class="col-md-4">
+                <div class="card nas-package shadow-sm">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h3>Paket Basic</h3>
+                        <h2>Rp 2.500.000</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li>✅ Kapasitas 4TB HDD</li>
+                            <li>✅ Transfer 250 Mbps</li>
+                            <li>✅ 2 Bay Storage</li>
+                            <li>✅ RAID 0/1 Support</li>
+                            <li>✅ Garansi 2 Tahun</li>
+                        </ul>
+                        <button class="btn btn-primary w-100">Pilih Paket Basic</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card nas-package shadow">
+                    <div class="card-header bg-success text-white text-center">
+                        <h3>Paket Professional</h3>
+                        <h2>Rp 5.000.000</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li>✅ Kapasitas 16TB HDD</li>
+                            <li>✅ Transfer 1 Gbps</li>
+                            <li>✅ 4 Bay Storage</li>
+                            <li>✅ RAID 5/10 Support</li>
+                            <li>✅ Garansi 3 Tahun</li>
+                        </ul>
+                        <button class="btn btn-success w-100">Pilih Paket Pro</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card nas-package shadow-lg">
+                    <div class="card-header bg-warning text-white text-center">
+                        <h3>Paket Enterprise</h3>
+                        <h2>Rp 10.000.000</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li>✅ Kapasitas 64TB HDD</li>
+                            <li>✅ Transfer 10 Gbps</li>
+                            <li>✅ 8 Bay Storage</li>
+                            <li>✅ Advanced RAID Config</li>
+                            <li>✅ Garansi 5 Tahun</li>
+                        </ul>
+                        <button class="btn btn-warning w-100">Pilih Paket Enterprise</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Kontak Kami</h5>
+                    <p>Email: support@nasolution.com</p>
+                    <p>Telepon: +62 812-3456-7890</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Navigasi</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Beranda</a></li>
+                        <li><a href="#" class="text-white">Produk</a></li>
+                        <li><a href="#" class="text-white">Dukungan</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Sosial Media</h5>
+                    <div>
+                        <a href="#" class="text-white me-3">Facebook</a>
+                        <a href="#" class="text-white me-3">Twitter</a>
+                        <a href="#" class="text-white">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p>&copy; 2024 NAS Solution. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
